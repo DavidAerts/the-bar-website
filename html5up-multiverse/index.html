@@ -28,24 +28,28 @@ Next, go to Section 2, where you replace the current image names with the new on
     <style>
         /* Your CSS goes here */
 		
-		.thumb {
-        	box-sizing: border-box;
-        	padding: 0 1em;
-    }
-	.thumb > a.image {
-    	touch-action: manipulation;
-	}
-		
-	.poptrox-popup h2,
-	.poptrox-popup p {
-    	display: block !important;
-    	color: white;
-	}
+	.thumb {
+    box-sizing: border-box;
+    padding: 0 1em;
+}
 
-	.poptrox-popup .caption {
-    	opacity: 1 !important;
-    	position: relative !important;
-    	bottom: auto !important;
+.thumb > a.image {
+    touch-action: manipulation;
+}
+
+.poptrox-popup .caption {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    position: relative !important;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+
+.poptrox-popup h2,
+.poptrox-popup p {
+    display: block !important;
+    color: white;
 }
 
 		/* Force mobile phone responsiveness, adjustments for screens smaller than 736px */
