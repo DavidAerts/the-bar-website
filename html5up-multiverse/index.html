@@ -6,7 +6,7 @@ Welcome to the backend of your website. I divided it into sections for better ov
 First of all, everything between <!-- and --> 
 <!-- 
 is comment and will be ignored by the website, so you can use it to make notes, etc.
-Section 2 is what displays the images, so that’s the one you should update every once in a while, the rest should be fine as is.
+Section 2 is where you displays the images, so that’s the one you should update every once in a while, the rest should be fine as is.
 Make some new pictures. Try to save them as .webp (this makes them smaller and speeds up the website), and use underscores _ instead of spaces in the filenames.
 Then upload them to GitHub in the "images" folder by going into that folder. At the top right, there’s a button called “Add file”. 
 Click that and drag & drop your pictures into the upload area.
@@ -22,7 +22,7 @@ Next, go to Section 2, where you replace the current image names with the new on
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-	<!-- Preload the first image for faster surfing, so if you change the first image you need to ajust the first line under this one as well. See section 2 on how. -->
+	<!-- Preload the first image for faster surfing, so if you change the first image on the website you need to ajust the first line under this one as well. See section 2 comment on how. -->
     <link rel="preload" href="images/bar_background-1.jpg" as="image">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic&display=swap">
@@ -99,12 +99,20 @@ Next, go to Section 2, where you replace the current image names with the new on
 
 			<!-- 
 			
-			Section 2: images/pictures. The structure is always the same, after "href=" (stands for hypertext reference) 
-			displays the zoomed in picture. After "img scr="you tell the PC what to look for and where, so both have to be the same, 
-			otherwise the zoomed in picture is diffrent than then the normal one. After "alt=" comes a decription of the image for The PC to read.
-			If you saved the images as webp all names should end in .webp .
-			Between <h2> and </h2> you should put the name of the picture to be displayed on the webiste.
-			Between <p> and </p> you should put the description, text or recipe of the image to be displayed on the website.
+			Section 2: Images/pictures.
+			The structure is always the same; after "href=" (stands for hypertext reference) it displays the zoomed in picture. 
+			After "img src=" you tell the PC what to look for and where, so both have to be the same, otherwise the zoomed in picture is different than the normal one. 
+			So, replace the file name between href="images/ and the first following " with the new file name.
+			Then replace the file name between <img src="images/ and the first following " on that same line.
+			After "alt=" comes a description of the image for the PC to read.
+			If you saved the images as webp, all names should end in .webp.
+			Between  and  you should put the name of the picture to be displayed on the website.
+			Between  and  you should put the description, text or recipe of the image to be displayed on the website.
+			When you have made all the changes you want to make, click the big green button on the top with "Commit changes...". Then you can, but don't have to, log into Cloudflare.
+			In cloudflare on the left under "build" click "compute" -> workers & pages.
+			Where you see "building website" or something like it in the middel of the top of the page, 
+			then you can click the big blue button "Visit" at the top right and see the changes right away.
+			I usually do the commit changes and visit after each change in the code, so if I mess it up I see the mistake straight away.
 			
 			-->
 			<div id="main">
