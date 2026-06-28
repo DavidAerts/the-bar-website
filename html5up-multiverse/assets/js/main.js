@@ -239,6 +239,7 @@
 		// Poptrox.
 			$main.poptrox({
 				baseZIndex: 20000,
+				usePopup: !browser.mobile,
 				usePopupNav: true,
 				useBodyOverflow: false,
 				caption: function($a) {
