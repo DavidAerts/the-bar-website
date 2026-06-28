@@ -18,7 +18,11 @@ Next, go to Section 2, where you replace the current image names with the new on
 <head>
     <meta charset="utf-8" />
     <title>G'Days Cocktail Bar | Best Craft Cocktails in Hasselt</title>
-	<!-- Preload the first image for faster surfing -->
+	<link rel="preload" href="images/bar_background-1.jpg" as="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<!-- Preload the first image for faster surfing, so if you change the first image you need to ajust the first line under this one as well. See section 2 on how. -->
     <link rel="preload" href="images/bar_background-1.jpg" as="image">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic&display=swap">
