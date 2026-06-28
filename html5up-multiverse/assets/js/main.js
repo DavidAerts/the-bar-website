@@ -239,7 +239,6 @@
 		// Poptrox.
 			$main.poptrox({
 				baseZIndex: 20000,
-				usePopup: !browser.mobile,
 				usePopupNav: true,
 				useBodyOverflow: false,
 				caption: function($a) {
@@ -256,7 +255,7 @@
 				fadeSpeed: 200,
 				onPopupClose: function() { $body.removeClass('modal-active'); },
 				onPopupOpen: function() { $body.addClass('modal-active'); },
-				overlayOpacity: 0,
+				overlayOpacity: 0.7,
 				popupCloserText: '',
 				popupHeight: 900,
 				popupLoaderText: '',
