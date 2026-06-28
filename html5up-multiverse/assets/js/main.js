@@ -239,7 +239,7 @@
 		// Poptrox.
 			$main.poptrox({
 				baseZIndex: 20000,
-				usePopupNave: true,
+				usePopupNav: true,
 				caption: function($a) {
 
 					var s = '';
@@ -251,15 +251,15 @@
 					return s;
 
 				},
-				fadeSpeed: 300,
+				fadeSpeed: 200,
 				onPopupClose: function() { $body.removeClass('modal-active'); },
 				onPopupOpen: function() { $body.addClass('modal-active'); },
 				overlayOpacity: 0,
 				popupCloserText: '',
-				popupHeight: 150,
+				popupHeight: 600,
 				popupLoaderText: '',
-				popupSpeed: 300,
-				popupWidth: 150,
+				popupSpeed: 200,
+				popupWidth: 800,
 				selector: '.thumb > a.image',
 				usePopupCaption: true,
 				usePopupCloser: true,
