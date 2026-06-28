@@ -240,6 +240,7 @@
 			$main.poptrox({
 				baseZIndex: 20000,
 				usePopupNav: true,
+				useBodyOverflow: false,
 				caption: function($a) {
 
 					var s = '';
