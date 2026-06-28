@@ -239,6 +239,7 @@
 		// Poptrox.
 			$main.poptrox({
 				baseZIndex: 20000,
+				usePopupNave: true,
 				caption: function($a) {
 
 					var s = '';
